@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.container-2 {
+  width: 80%;
+  margin: auto;
+}
+header {
+  height: 100px;
+  background-color: black;
+}
+header .container {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header ul {
+  list-style: none;
+}
+header li {
+  display: inline;
+  margin-left: 20px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+.section-pocetak .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+}
+.section-pocetak {
+  background-image: url(./images/bg-1.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-pocetak h1 {
+  color: white;
+  height: 100px;
+  font-weight: 100;
+  font-size: 70px;
+}
+.section-pocetak span {
+  color: white;
+  height: 100px;
+  font-weight: bold;
+}
+.section-sredina {
+  height: 500px;
+}
+.section-sredina h3 {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 35px;
+}
+.section-sredina .container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sredina-lijevo {
+  width: 40%;
+}
+.sredina-lijevo h4 {
+  font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.sredina-lijevo span {
+  font-weight: bold;
+}
+.sredina-desno {
+  width: 60%;
+}
+.sredina-desno img {
+  width: 100%;
+}
+
+.section-sredina2 {
+  height: 500px;
+  background-color: orange;
+}
+.section-sredina2 .container-2 {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sredina2-lijevo {
+  width: 40%;
+}
+.sredina2-lijevo h4 {
+  font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.sredina2-desno {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sredina2-desno img {
+  width: 100%;
+}
+/* - SECTION KRAJ - */
+.section-kraj {
+  padding: 20px 0px;
+}
+.section-kraj .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 50px 0px;
+}
+
+.box1 {
+  flex: 1;
+}
+.box1 h3 {
+  margin: 10px 10px;
+}
+.box1 p {
+  margin: 0px 10px 10px 10px;
+}
+.box1 button {
+  margin: 0px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: unset;
+  padding: 5px;
+}
+.box1 img {
+  width: 100%;
+}
+/* - footer - */
+footer {
+  background-color: black;
+  color: silver;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  header {
+    height: 300px;
+  }
+  header .container {
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header ul {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header a {
+    text-transform: uppercase;
+  }
+  .section-sredina {
+    height: 500px;
+  }
+  .section-sredina .container-2 {
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sredina-lijevo {
+    width: 100%;
+  }
+  .sredina-desno {
+    width: 100%;
+  }
+  .section-sredina2 {
+    height: 600px;
+  }
+  .section-sredina2 .container-2 {
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sredina2-lijevo {
+    width: 100%;
+  }
+  .sredina2-lijevo h4 {
+    margin-bottom: 20px;
+    font-weight: unset;
+    font-size: 25px;
+  }
+  .sredina2-lijevo span {
+    font-weight: bolder;
+  }
+  .sredina2-desno {
+    width: 100%;
+  }
+  .sredina2-desno iframe {
+    width: 100%;
+  }
+  .section-kraj {
+    background-color: silver;
+  }
+  .section-kraj .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .box1 {
+    flex: none;
+    width: 48%;
+    background-color: white;
+  }
+}
